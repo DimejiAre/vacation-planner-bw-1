@@ -189,9 +189,6 @@ header .header-text {
 .main-content .features section {
   width: 32%;
 }
-.main-content .features section div {
-  max-height: 200px;
-}
 .main-content .features img {
   border-radius: 20px;
 }

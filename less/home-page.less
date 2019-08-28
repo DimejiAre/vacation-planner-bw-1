@@ -21,8 +21,8 @@
     }
 
     .right-nav{
-        width: 15%;
-        .flex-row(space-between);
+        width: 20%;
+        .flex-row(space-evenly);
 
     }
 
@@ -30,6 +30,7 @@
         text-decoration: none;
         border: 1px solid black;
         padding: 10px;
+        white-space: nowrap;
     }
 }
 
@@ -52,7 +53,7 @@ header {
         text-align: center;
         width: 100%;
         background-color: rgb(49, 33, 13);
-        opacity: 0.6;
+        opacity: 0.8;
       }
 }
 
@@ -128,11 +129,23 @@ header {
             border-radius: 20px;
         }
         .small {
-            width: 30%;
+            width: 38%;
+            position: relative;
         }
     
         .large {
-            width: 68%;
+            width: 60%;
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 20%;
+            padding: 0 20px;
+            color: white;
+            text-align: right;
+            background-color: gray;
+            opacity: 0.9;
         }
     }
 }

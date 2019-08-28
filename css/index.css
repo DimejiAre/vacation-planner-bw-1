@@ -182,14 +182,15 @@ img {
   justify-content: space-between;
 }
 .page-navigation .right-nav {
-  width: 15%;
+  width: 20%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .page-navigation a {
   text-decoration: none;
   border: 1px solid black;
   padding: 10px;
+  white-space: nowrap;
 }
 header {
   position: relative;
@@ -208,7 +209,7 @@ header .header-text {
   text-align: center;
   width: 100%;
   background-color: #31210d;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .main-content {
   display: flex;
@@ -276,10 +277,21 @@ header .header-text {
   border-radius: 20px;
 }
 .main-content .destinations .small {
-  width: 30%;
+  width: 38%;
+  position: relative;
 }
 .main-content .destinations .large {
-  width: 68%;
+  width: 60%;
+  position: relative;
+}
+.main-content .destinations .text {
+  position: absolute;
+  bottom: 20%;
+  padding: 0 20px;
+  color: white;
+  text-align: right;
+  background-color: gray;
+  opacity: 0.9;
 }
 footer {
   display: flex;

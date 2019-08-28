@@ -7,7 +7,7 @@
     .flex-row(space-between);
     align-items: center;
     position: sticky;
-    background-color: white;
+    background-color: rgb(235, 235, 235);
     z-index: 1;
     top: 0;
 
@@ -28,9 +28,18 @@
 
     a {
         text-decoration: none;
-        border: 1px solid black;
+        color: cornflowerblue;
+        // border: 1px solid black;
+        width: 100px;
+        text-align: center;
+        border-radius: 15px;
         padding: 10px;
         white-space: nowrap;
+
+        &:hover {
+            background-color: cornflowerblue;
+            color: white;
+        }
     }
 }
 
@@ -64,7 +73,7 @@ header {
 
     .features {
         .flex-row(space-between);
-        border: 1px solid red;
+        // border: 1px solid red;
         margin: 20px 0;
 
         h3 {
@@ -117,7 +126,7 @@ header {
     .destinations {
         .flex-row(space-between);
         flex-wrap: wrap;
-        border: 1px solid blue;
+        // border: 1px solid blue;
         margin-top: 20px;
 
         section {
@@ -141,7 +150,7 @@ header {
         .text {
             position: absolute;
             bottom: 20%;
-            padding: 0 20px;
+            padding: 5px 20px;
             color: white;
             text-align: right;
             background-color: gray;
@@ -152,9 +161,9 @@ header {
 
 footer{
     .flex-column();
-    border: 1px solid violet;
+    // border: 1px solid violet;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: rgb(235, 235, 235);
     padding: 20px 0;
 
     div {
@@ -175,7 +184,14 @@ footer{
 
         a {
             text-decoration: none;
-            color: cornflowerblue;
+            color: black;
+            border-radius: 15px;
+            padding: 5px;
+            white-space: nowrap;
+
+            &:hover {
+                .animate(cornflowerblue);
+            }
         }
     }
 

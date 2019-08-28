@@ -8,3 +8,10 @@
     display: flex;
     justify-content: @justifyContent;
 }
+
+.animate(@color){
+    transform: scale(1.2);
+    transition: 0.3s ease-in;
+    transition: 0.2s ease-out;
+    color: darken(@color, 20%);
+}

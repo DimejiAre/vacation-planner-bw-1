@@ -30,18 +30,23 @@
         @media @phone {
             .flex-column(space-between);
             align-items: center;
-            padding: 20px 20px;
+            padding: 20px 20px 0 20px;
         }
 
         section{
-            width: 35%;
+            width: 30%;
 
             @media @phone {
                 width: 80%;
+                padding-bottom: 20px;
             }
 
             .image {
-                height: 80%;
+                height: 70%;
+
+                @media @phone {
+                    height: 300px;
+                }
             }
         }
 
@@ -50,7 +55,7 @@
         }
 
         img{
-            border-radius: 50%;
+            border-radius: 45%;
         }
     }
 }

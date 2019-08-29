@@ -170,6 +170,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 3px;
   height: 50px;
   position: sticky;
   background-color: #ebebeb;

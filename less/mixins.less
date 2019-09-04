@@ -1,0 +1,38 @@
+// Flex-Box
+.flex-column(@justifyContent: flex-start){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justifyContent;
+}
+
+.flex-row(@justifyContent: flex-start){
+    display: flex;
+    justify-content: @justifyContent;
+}
+
+// Animations
+.animate(@color){
+    transform: scale(1.2);
+    transition: 0.3s ease-in;
+    transition: 0.2s ease-out;
+    color: darken(@color, 20%);
+}
+
+// Buttons
+.button(@color: white, @backgroundColor: cornflowerblue){
+    color: @color;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: @backgroundColor;
+    width: 10rem;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: 0.3s ease-in;
+        transition: 0.2s ease-out;
+        background-color: darken(@backgroundColor, 10%);
+        cursor: pointer;
+    }
+}
